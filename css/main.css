@@ -95,22 +95,50 @@ nav {
 /* end header */
 
 /* start fonts */
-.fs-1{ font-size: 15px; }
-.fs-2{ font-size: 18px; }
-.fs-3{ font-size: 20px; }
-.fs-4{ font-size: 21px; }
-.fs-5{ font-size: 22px; }
-.fs-6{ font-size: 24px; }
+p{
+    margin-bottom: 0.7rem;
+}
+.h6{ font-size: 24px; font-weight: 600; }
+.h5{ font-size: 26px; font-weight: 600; }
+.h4{ font-size: 28px; font-weight: 600; }
+.h3{ font-size: 30px; font-weight: 600; }
+.h2{ font-size: 32px; font-weight: 600; }
+.h1{ font-size: 34px; font-weight: 600; }
+
+.fs-1{ font-size: 12px; }
+.fs-2{ font-size: 14px; }
+.fs-3{ font-size: 16px; }
+.fs-4{ font-size: 18px; }
+.fs-5{ font-size: 20px; }
+.fs-6{ font-size: 22px; }
 .fw-1{ font-weight: 200; }
 .fw-2{ font-weight: 300; }
 .fw-3{ font-weight: 400; }
 .fw-4{ font-weight: 500; }
 .fw-5{ font-weight: 600; }
 .fw-6{ font-weight: 700; }
-.letter-spacing-1{ letter-spacing: 1px; }
+.letter-spacing-1{ letter-spacing: 0.2px; }
+.letter-spacing-2{ letter-spacing: 0.3px; }
+.letter-spacing-3{ letter-spacing: 0.4px; }
+.letter-spacing-4{ letter-spacing: 0.5px; }
+.letter-spacing-5{ letter-spacing: 0.6px; }
+.letter-spacing-6{ letter-spacing: 0.7px; }
+
+.line-height-1{ line-height: 1.0em;}
+.line-height-2{ line-height: 1.1em;}
+.line-height-3{ line-height: 1.2em;}
+.line-height-4{ line-height: 1.3em;}
+.line-height-5{ line-height: 1.4em;}
+.line-height-6{ line-height: 1.5em;}
+
 
 .text-white{ color: white; }
 .text-black{ color: black; }
+.text-darkgray{ color: rgb(36, 36, 36); }
+
+.text-center{ text-align: center; }
+.text-left{ text-align: left; }
+.text-right{ text-align: right; }
 /* end fonts */
 
 /* start margin && padding */
@@ -193,7 +221,9 @@ nav {
     margin-right: auto;
     margin-left: auto;
 }
-
+.container-full{
+    width: 100%;
+}
 @media (min-width: 576px) {
     .container-sm {
         max-width: 540px;
@@ -249,12 +279,21 @@ nav {
 }
 /* end row && col */
 
+/* start displays */
+.d-flex {
+    display: flex;
+}
+.align-items-stretch {
+    align-items: stretch;
+}
+/* end displays */
+
 /* start cap */
 .cap{
-    background-image: url('/img/BG_img_1.png');
+    background-color: #6f42c1;
+    /*background-image: url('/img/BG_img_1.png');*/
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     height: 400px;
     width: 100%;
 }
@@ -287,12 +326,16 @@ nav {
     font-size: 1.25rem;
     margin-bottom: 0.75rem;
     color: #6f42c1;
+    letter-spacing: 0.5px;
 
 }
 
 .card-text {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.20rem;
     color: #6c757d;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.4em
 }
 
 .btn {
@@ -312,8 +355,8 @@ nav {
 }
 
 .btn-primary {
-    color: #fff;
-    background-color: #6f42c1;
+    color: #6f42c1;
+    background-color: transparent;
     border-color: #6f42c1;
 }
 
@@ -323,6 +366,27 @@ nav {
     border-color: #4e1f75;
 }
 /* end card */
+
+/* start social-icons */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+.social-icons li {
+    display: inline;
+}
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
+}
+.social-icons a:hover {
+    color: #007bff;
+}
+/* end social-icons */
 
 /* start footer */
 .footer{
