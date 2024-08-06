@@ -1,13 +1,11 @@
 
-
-*{
-    margin: 0;
-    padding: 0;
-}
 body{
     font-family: 'Roboto', sans-serif; /* Google Font */
     background-color: #f4f4f9;
     min-height: 1000px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -215,7 +213,6 @@ p{
 
 /* start containers */
 .container-sm {
-    width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -319,10 +316,7 @@ p{
 /* end displays */
 
 /**/
-.accordion {
-    max-width: 100%;
-    margin: auto;
-}
+
 .accordion-btn {
     background-color: transparent;
     color: rgb(32, 32, 32);
